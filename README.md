@@ -24,9 +24,3 @@ npm run dev
 ```bash
 npm run build
 ```
-
-### Запуск собранного приложения (production - режим у webpack)
-
-```bash
-npm run prod
-```
