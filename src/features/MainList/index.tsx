@@ -57,7 +57,7 @@ const WrapBox = styled.div`
     @media (max-width: 560px) {
       font-size: 20px;
       line-height: 1;
-      margin-top: 120px;
+      margin-top: 200px;
     }
   }
   @media (max-width: 560px) {
