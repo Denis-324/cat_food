@@ -1,0 +1,22 @@
+:root {
+  /* COLORS */
+  --color-white: #ffffff;
+  --color-grey-fonts: #666666;
+  --color-grey-border: #b3b3b3;
+  --color-grey-disabled: #f2f2f2;
+  --color-black: #000000;
+  --color-blue: #1698d9;
+  --color-red: #d91667;
+  --color-yellow: #ffff66;
+
+  /* FONTS */
+  --h1-36-42-thin: 36px/42px 'Exo2.0-Thin';
+  --paragraph-16_19-regular: 16px/19px 'Inter-Regular';
+  --paragraph-48_56-bold: 48px/56px 'Inter-Bold';
+  --paragraph-24_28-bold: 24px/28px 'Inter-Bold';
+  --paragraph-14_16-bold: 14px/16px 'Inter-Bold';
+  --paragraph-14_16-regular: 14px/16px 'Inter-Regular';
+  --paragraph-42_22-regular: 42px/22px 'Inter-Regular';
+  --paragraph-21_22-regular: 21px/22px 'Inter-Regular';
+  --paragraph-13_15-regular: 13px/15px 'Inter-Regular';
+}
