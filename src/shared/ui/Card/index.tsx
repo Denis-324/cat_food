@@ -90,6 +90,7 @@ export const Card: React.FC<CardType> = (props) => {
 };
 
 const Wrap = styled((props) => <div {...props} />)`
+  justify-self: center;
   width: 320px;
   height: 509px;
   @media (max-width: 1160px) {

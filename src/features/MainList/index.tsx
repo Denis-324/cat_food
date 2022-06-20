@@ -29,9 +29,9 @@ const Wrap = styled.section`
 `;
 
 const WrapBox = styled.div`
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   overflow-x: hidden;
-
   ::-webkit-scrollbar {
     width: 10px;
   }
@@ -41,10 +41,10 @@ const WrapBox = styled.div`
   }
 
   color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0px;
   z-index: 10;
   display: flex;
   justify-content: center;
@@ -57,7 +57,6 @@ const WrapBox = styled.div`
     @media (max-width: 560px) {
       font-size: 20px;
       line-height: 1;
-      margin-top: 200px;
     }
   }
   @media (max-width: 560px) {
