@@ -62,6 +62,7 @@ const WrapBox = styled.div`
   }
   @media (max-width: 560px) {
     gap: 7px;
+    padding-bottom: 40px;
   }
 
   .main_box {
@@ -75,7 +76,7 @@ const WrapBox = styled.div`
     padding: 0 10px;
 
     @media (max-width: 1160px) {
-      grid-gap: 20px;
+      grid-gap: 30px;
     }
     @media (max-width: 990px) {
       grid-template-columns: 1fr 1fr;
