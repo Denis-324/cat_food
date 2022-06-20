@@ -93,13 +93,9 @@ const Wrap = styled((props) => <div {...props} />)`
   justify-self: center;
   width: 320px;
   height: 509px;
-  @media (max-width: 1160px) {
-    width: 300px;
-    height: 470px;
-  }
-  @media (max-width: 990px) {
-    height: 320px;
-    width: 250px;
+  @media (max-width: 400px) {
+    width: 280px;
+    height: 480px;
   }
   button {
     margin: 0;
@@ -118,15 +114,10 @@ const Wrap = styled((props) => <div {...props} />)`
     border-radius: 0 12px 12px 12px;
     border: solid ${(props) => props.color};
     opacity: ${(props) => props.opacity};
-    @media (max-width: 1160px) {
-      width: 300px;
+    @media (max-width: 400px) {
+      width: 280px;
       height: 450px;
-    }
-    @media (max-width: 990px) {
-      grid-template-columns: 1fr 1fr;
-      padding: 12px 0 0 28px;
-      height: 310px;
-      width: 250px;
+      padding: 21px 0 0 28px;
     }
   }
 
@@ -134,21 +125,12 @@ const Wrap = styled((props) => <div {...props} />)`
     border-radius: 0 12px 12px 12px;
     background: var(--color-white);
     background: linear-gradient(135deg, transparent 34px, var(--color-white) 0);
-    @media (max-width: 990px) {
-      background: linear-gradient(135deg, transparent 24px, var(--color-white) 0);
-    }
   }
 
   .card_sabtitle {
     color: var(--color-grey-fonts);
     font: var(--paragraph-16_19-regular);
     margin-bottom: 10px;
-
-    @media (max-width: 990px) {
-      margin-bottom: 5px;
-      font-size: 14px;
-      line-height: 1;
-    }
   }
   .card_item:hover > .card_sabtitle {
     display: ${(props) => props.hoverGrey};
@@ -159,11 +141,6 @@ const Wrap = styled((props) => <div {...props} />)`
     color: var(--color-red);
     font: var(--paragraph-16_19-regular);
     margin-bottom: 10px;
-    @media (max-width: 990px) {
-      margin-bottom: 5px;
-      font-size: 14px;
-      line-height: 1;
-    }
   }
   .card_item:hover > .card_sabtitle_red {
     display: ${(props) => props.hoverRed};
@@ -171,24 +148,15 @@ const Wrap = styled((props) => <div {...props} />)`
   .card_title {
     color: var(--color-black);
     font: var(--paragraph-48_56-bold);
-    @media (max-width: 990px) {
-      font: var(--paragraph-24_28-bold);
-    }
   }
   .card_ingredient {
     color: var(--color-black);
     font: var(--paragraph-24_28-bold);
-    @media (max-width: 990px) {
-      font: var(--paragraph-14_16-bold);
-    }
   }
   .card_portion_count {
     color: var(--color-grey-fonts);
     font: var(--paragraph-14_16-bold);
     margin-top: 15px;
-    @media (max-width: 990px) {
-      margin-top: 5px;
-    }
   }
   .card_portion {
     color: var(--color-grey-fonts);
@@ -206,16 +174,9 @@ const Wrap = styled((props) => <div {...props} />)`
   .card_mass_count {
     font: var(--paragraph-42_22-regular);
     margin-top: 11px;
-    @media (max-width: 990px) {
-      font: var(--paragraph-14_16-regular);
-      margin-top: 1px;
-    }
   }
   .card_mass {
     font: var(--paragraph-21_22-regular);
-    @media (max-width: 990px) {
-      font: var(--paragraph-14_16-regular);
-    }
   }
   .card_mass_box {
     position: absolute;
@@ -230,33 +191,19 @@ const Wrap = styled((props) => <div {...props} />)`
     height: 80px;
     border-radius: 50%;
     background: ${(props) => props.color};
-    @media (max-width: 990px) {
-      width: 40px;
-      height: 40px;
-      gap: 1px;
-    }
   }
   .card_img {
     position: absolute;
     bottom: 0;
     left: 0;
-    @media (max-width: 990px) {
-      width: 180px;
-    }
   }
   .card_footer {
     margin-top: 14px;
     font: var(--paragraph-13_15-regular);
-    @media (max-width: 990px) {
-      margin-top: 5px;
-    }
   }
   .card_footer_disabled {
     margin-top: 14px;
     color: var(--color-yellow);
-    @media (max-width: 990px) {
-      margin-top: 5px;
-    }
   }
   .card_button {
     cursor: pointer;

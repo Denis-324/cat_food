@@ -31,14 +31,6 @@ const Wrap = styled.section`
 const WrapBox = styled.div`
   min-height: 100vh;
   height: 100%;
-  overflow-x: hidden;
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-  ::-webkit-scrollbar-thumb {
-    background-color: var(--color-blue);
-    border-radius: 4px;
-  }
 
   color: #fff;
   max-width: 1160px;
@@ -55,33 +47,20 @@ const WrapBox = styled.div`
     font: var(--h1-36-42-thin);
     color: var(--color-white);
     @media (max-width: 560px) {
-      font-size: 20px;
+      font-size: 24px;
       line-height: 1;
     }
   }
-  @media (max-width: 560px) {
-    gap: 7px;
-    padding-bottom: 40px;
-  }
 
   .main_box {
-    max-width: 1140px;
-    width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 80px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 80px;
     align-items: center;
     justify-content: space-between;
     padding: 0 10px;
-
-    @media (max-width: 1160px) {
-      grid-gap: 30px;
-    }
-    @media (max-width: 990px) {
-      grid-template-columns: 1fr 1fr;
-    }
     @media (max-width: 560px) {
-      grid-template-columns: 1fr;
+      gap: 40px;
     }
   }
 `;
