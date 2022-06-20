@@ -123,7 +123,6 @@ const Wrap = styled((props) => <div {...props} />)`
 
   .card_opacity {
     border-radius: 0 12px 12px 12px;
-    background: var(--color-white);
     background: linear-gradient(135deg, transparent 34px, var(--color-white) 0);
   }
 
