@@ -1,22 +1,22 @@
 export type DataType = {
-   id: string;
-   subTitle: {
-      one: string;
-      two: string;
-   };
-   title: string;
-   ingredient: string;
-   countPortion: string;
-   countPresent: string | null;
-   result?: string;
-   mass: string;
-   footerCadr: {
-      one: string;
-      two: string;
-      three: string;
-   };
-   disabled: boolean;
-}
+  id: string;
+  subTitle: {
+    one: string;
+    two: string;
+  };
+  title: string;
+  ingredient: string;
+  countPortion: string;
+  countPresent: string | null;
+  result?: string;
+  mass: string;
+  footerCadr: {
+    one: string;
+    two: string;
+    three: string;
+  };
+  disabled: boolean;
+};
 
 export const data: DataType[] = [
   {

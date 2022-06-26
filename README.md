@@ -24,3 +24,6 @@ npm run dev
 ```bash
 npm run build
 ```
+
+[eslint]: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+[prettier]: https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
