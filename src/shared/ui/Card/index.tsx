@@ -41,7 +41,7 @@ export const Card: React.FC<CardType> = (props) => {
         onClick={handlerToggle}
         type="button"
       >
-        <div className="card_opacity">
+        <div className="card_item_bg">
           <div className="card_item">
             <div className="card_sabtitle">{el.subTitle.one}</div>
             <div className="card_sabtitle_red">{el.subTitle.two}</div>
@@ -104,26 +104,32 @@ const Wrap = styled((props) => <div {...props} />)`
     background: none;
   }
 
+  .card_item_bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 12px 12px 12px;
+    background: linear-gradient(135deg, transparent 34px, ${(props) => props.color} 0);
+    width: 320px;
+    height: 480px;
+    padding: 3.4px;
+  }
+
   .card_item {
     position: relative;
     padding: 21px 0 0 48px;
-    width: 320px;
-    height: 480px;
+    width: 100%;
+    height: 100%;
     text-align: left;
     cursor: pointer;
     border-radius: 0 12px 12px 12px;
-    border: solid ${(props) => props.color};
+    background: linear-gradient(135deg, transparent 34px, var(--color-white) 0);
     opacity: ${(props) => props.opacity};
     @media (max-width: 400px) {
       width: 280px;
       height: 450px;
       padding: 21px 0 0 28px;
     }
-  }
-
-  .card_opacity {
-    border-radius: 0 12px 12px 12px;
-    background: linear-gradient(135deg, transparent 34px, var(--color-white) 0);
   }
 
   .card_sabtitle {
