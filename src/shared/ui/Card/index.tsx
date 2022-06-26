@@ -113,6 +113,10 @@ const Wrap = styled((props) => <div {...props} />)`
     width: 320px;
     height: 480px;
     padding: 3.4px;
+    @media (max-width: 400px) {
+      width: 280px;
+      height: 450px;
+    }
   }
 
   .card_item {
@@ -126,8 +130,6 @@ const Wrap = styled((props) => <div {...props} />)`
     background: linear-gradient(135deg, transparent 34px, var(--color-white) 0);
     opacity: ${(props) => props.opacity};
     @media (max-width: 400px) {
-      width: 280px;
-      height: 450px;
       padding: 21px 0 0 28px;
     }
   }
